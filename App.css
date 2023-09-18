@@ -1,0 +1,55 @@
+/* Estilos para o componente App */
+.app {
+  text-align: center;
+  background-color: #f5f5f5; /* Cor de fundo semelhante ao Google Fotos */
+  padding: 20px;
+}
+
+/* Estilos para a logo */
+.logo {
+  max-width: 150px; /* Defina a largura máxima da logo */
+  height: auto;
+  display: block; /* Centralize a logo horizontalmente */
+  margin: 0 auto;
+}
+
+
+/* Estilos para a barra de pesquisa */
+.search {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 12px; /* Aumente o preenchimento para tornar a barra de pesquisa mais proeminente */
+  width: 100%;
+  border: none;
+  border-radius: 8px; /* Borda arredondada semelhante ao Google Fotos */
+  background-color: #fff; /* Fundo branco para a barra de pesquisa */
+  font-size: 16px; /* Tamanho de fonte menor para a barra de pesquisa */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave semelhante ao Google Fotos */
+}
+
+/* Estilos para as fotos */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center; /* Centralize as fotos na grade */
+}
+
+.photo {
+  border-radius: 8px; /* Borda arredondada semelhante ao Google Fotos */
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}
